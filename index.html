@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои задачи — стикеры</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Мои задачи</h1>
+        <div class="input-row">
+            <input type="text" id="taskInput" placeholder="Что делаем?">
+            <button id="addBtn">Добавить</button>
+        </div>
+        <p class="hint">Создай стикер → перетащи его на доску справа → двигай по доске. Двойной клик — удалить.</p>
+    </header>
+
+    <main>
+        <!-- Панель со стикерами -->
+        <aside id="panel">
+            <h2>Стикеры</h2>
+            <div id="stickerTray"></div>
+        </aside>
+
+        <!-- Доска -->
+        <section id="board">
+            <h2>Доска</h2>
+            <div id="boardArea"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
